@@ -1,0 +1,13 @@
+{{!-- <div class="content"> --}}
+	<div class="header">
+		<span>{{name}}</span>
+		<span>stars {{stargazers_count}}</span>
+		<span>forks {{forks_count}}</span>
+	</div>
+
+	<div id="commits" class="commits">
+		<ul>
+		</ul>
+	</div>
+	<button id="loadButton" onclick="controller.loadCommits()">Load More</button>
+{{!-- </div> --}}

@@ -1,0 +1,8 @@
+{{!-- <div class="menu"> --}}
+	<h1>Projetos</h1>
+	<ul>
+	{{#each projects}}
+	<li><a class="project" href="#" onclick="controller.loadProject('{{name}}')">{{name}}</a></li>
+	{{/each}}
+	</ul>
+{{!-- </div> --}}

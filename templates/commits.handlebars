@@ -1,0 +1,9 @@
+{{#each commits}}
+	<li>
+	<div>
+		<img src="{{author.avatar_url}}"/>
+		<span>{{commit.message}}</span> <span>{{commit.author.date}}</span>
+		<span>@{{author.login}}</span>
+	</div>
+	</li>
+{{/each}}
