@@ -1,10 +1,14 @@
 <html>
 <head>
-	<title></title>
+	<title>Elastic Search</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/libs/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/libs/handlebars.runtime-v2.0.0.js"></script>
+	<script type="text/javascript" src="js/handlebarHelpers.js"></script>
 	<script type="text/javascript" src="js/templates.js"></script>
+	<script type="text/javascript" src="js/githubAPI.js"></script>
 	<script type="text/javascript" src="js/controller.js"></script>
+
 	<script type="text/javascript">
 		var controller = new Controller("elasticsearch");
 		$(window).load(function() {
@@ -27,9 +31,11 @@
 	</script>
 </head>
 <body>
-<div id="menu" class="menu">
-</div>
-<div id="content" class="content">
+<div id="wrap">
+	<div id="menu" class="menu">
+	</div>
+	<div id="content" class="content">
+	</div>
 </div>
 </body>
 </html>

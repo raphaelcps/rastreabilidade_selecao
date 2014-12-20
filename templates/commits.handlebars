@@ -1,9 +1,14 @@
 {{#each commits}}
 	<li>
-	<div>
-		<img src="{{author.avatar_url}}"/>
-		<span>{{commit.message}}</span> <span>{{commit.author.date}}</span>
-		<span>@{{author.login}}</span>
+	<div class="commit">
+		<img class="avatar" src="{{author.avatar_url}}"/>
+		<div class="commit_desc">
+			<div class="commit_autor">
+				<span class="commit_name">{{commit.author.name}}</span>
+				<span class="commit_login">@{{author.login}}</span>
+			</div>
+			<span class="commit_date">{{format_date commit.author.date}}</span>
+		</div>
 	</div>
 	</li>
 {{/each}}

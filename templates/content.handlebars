@@ -1,13 +1,21 @@
 {{!-- <div class="content"> --}}
 	<div class="header">
-		<span>{{name}}</span>
-		<span>stars {{stargazers_count}}</span>
-		<span>forks {{forks_count}}</span>
+		<div id="repo_name">
+		{{name}}
+		</div>
+		<div id="repo_stats">
+			<div id="repo_stars">
+			stars {{stargazers_count}}
+			</div>
+			<div id="repo_forks">
+			forks {{forks_count}}
+			</div>
+		</div>
 	</div>
 
-	<div id="commits" class="commits">
-		<ul>
+	<div class="commits">
+		<ul id="commits">
 		</ul>
 	</div>
-	<button id="loadButton" onclick="controller.loadCommits()">Load More</button>
+	<button id="loadButton" onclick="controller.loadCommits()">Carregar Mais</button>
 {{!-- </div> --}}

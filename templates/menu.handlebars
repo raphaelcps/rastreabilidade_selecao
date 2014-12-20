@@ -1,8 +1,8 @@
 {{!-- <div class="menu"> --}}
-	<h1>Projetos</h1>
+	<h1>projetos</h1>
 	<ul>
 	{{#each projects}}
-	<li><a class="project" href="#" onclick="controller.loadProject('{{name}}')">{{name}}</a></li>
+	<li><a class="project" href="#" onclick="controller.loadProject('{{name}}');$('li[class=selected]').removeClass();$(this).parent().addClass('selected')">{{name}}</a></li>
 	{{/each}}
 	</ul>
 {{!-- </div> --}}

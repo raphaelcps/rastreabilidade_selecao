@@ -1,0 +1,135 @@
+body, html {
+	margin:0;
+	padding:0;
+	font-family: "Century Gothic", CenturyGothic, 'Lato', sans-serif;
+}
+
+#wrap {
+	width:900px;
+	margin:0 auto;
+	background:#99c;
+}
+
+.menu {
+	float:left;
+	padding: 5px;
+	padding-right: 0px;
+	background-color: rgb(75,120,230);
+	width: 250px;
+	color: white;
+	text-align: center;
+}
+
+.content {
+	float:right;
+	width: 600px;
+	color: gray;
+}
+.commits {
+	margin-top: 110px;
+}
+
+.content .header {
+	font-size: 21px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#repo_name {
+	float:left;
+	width: 200px;
+}
+#repo_stats {
+	float:right;
+	width: 400px;
+}
+#repo_stars {
+	float:left;
+	width: 200px;
+}
+#repo_forks {
+	float:right;
+	width: 200px;
+}
+
+
+#loadButton {
+	width: 100%;
+	border: 0px;
+	color: white;
+	background-color: rgb(210,210,210);
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.commit {
+	border: 1px solid gray;
+	border-color: rgba(160,160,160,0.5);
+	padding: 5px;
+	margin: 5px;
+	clear: both;
+	height: 50px
+}
+.commit .avatar {
+	float:left;
+}
+
+.commit .commit_desc {
+	float:right;
+	width: 515px;
+}
+
+.commit .commit_autor {
+	float:left;
+}
+.commit .commit_date {
+	font-size: 12px;
+	float:right;
+}
+.commit .commit_name {
+	font-weight: bold;
+	display: block;
+}
+.commit .commit_login {
+	display: block;
+}
+.commit img {
+	width: 50px;
+}
+#commits {
+	list-style-type: none;
+	padding: 0px;
+}
+.menu h1 {
+	color: #ffffff;
+	font-family: "Century Gothic", CenturyGothic, 'Lato', sans-serif;
+	font-size: 54px;
+	font-weight: 200;
+	line-height: 30px;
+	margin: 30 0 30px;
+}
+.menu a:visited {
+	color: #FFFFFF;
+}
+.menu a:link {
+	color: #FFFFFF;
+}
+.menu a {
+	text-decoration: initial;
+	padding-right: 15px;
+}
+.menu ul {
+    list-style-type: none;
+	text-align: right;
+	color: #ffffff;
+	font-family: "Century Gothic", CenturyGothic, 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 35px;
+}
+li.selected {
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: center;
+}
